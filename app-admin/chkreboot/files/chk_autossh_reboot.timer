@@ -1,0 +1,12 @@
+[Unit]
+Description=Check to see if autossh need to reboot
+
+[Timer]
+OnActiveSec=0
+Unit=chk_reboot.service
+OnUnitActiveSec=10
+RemainAfterElapse=yes
+Persistent=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,5 @@
+[Unit]
+Description=service to check autossh reboot lock
+
+[Service]
+ExecStart=/usr/bin/chk_reboot.sh
